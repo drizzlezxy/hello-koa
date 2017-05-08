@@ -34,6 +34,7 @@ function addMapping(router, mapping) {
 			console.log(`invalid URL: ${url}`);
 		}
 	}
+	router.redirect('/signin', '/login');
 }
 
 module.exports = function(dir) {
